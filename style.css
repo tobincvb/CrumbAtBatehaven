@@ -6,7 +6,7 @@
     --text-muted: #736B60;
     --brand-color: #F8CAC7; /* Warm Terracotta / Baked Crumb */
     --brand-hover: #A85534;
-    --accent-warm: #E2C095; /* Soft pastry crust color for lines/accents */
+    --accent-warm: #F8CAC7; /* Soft pastry crust color for lines/accents */
 }
 
 * {
