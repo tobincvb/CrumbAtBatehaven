@@ -1,12 +1,12 @@
-/* --- Warm Terracotta & Oak Variables --- */
+/* --- Warm Salmon Pink & Oak Variables --- */
 :root {
     --bg-white: #FFFFFF;
     --bg-offwhite: #FDFBF7; 
-    --text-dark: #2A2825; /* Deep espresso brown */
+    --text-dark: #2A2825; 
     --text-muted: #736B60;
-    --brand-color: #F8CAC7; /* Salmon Pink */
-    --brand-hover: #E5B2AD; /* Slightly darker salmon for hover effects */
-    --accent-warm: #E2C095; /* Soft pastry crust color for lines/accents */
+    --brand-color: #F8CAC7; 
+    --brand-hover: #E5B2AD; 
+    --accent-warm: #E2C095; 
 }
 
 * {
@@ -29,7 +29,7 @@ body {
 
 h1, h2, h3 {
     font-family: 'Playfair Display', serif;
-    color: var(--text-dark); /* Changed to dark text so it's readable on white backgrounds */
+    color: var(--text-dark); 
 }
 
 a {
@@ -51,11 +51,10 @@ a {
     background-color: var(--bg-offwhite);
 }
 
-/* --- Warm Accents --- */
 .accent-line {
     width: 60px;
     height: 3px;
-    background-color: var(--brand-color); /* Uses the new pink */
+    background-color: var(--brand-color); 
     margin: 20px 0 30px 0;
     border-radius: 2px;
 }
@@ -64,17 +63,17 @@ a {
     margin: 20px auto 40px auto;
 }
 
-/* --- High-Contrast Buttons --- */
+/* --- High-Contrast & Consistent Buttons --- */
 .btn-primary {
     background-color: var(--brand-color);
-    color: var(--text-dark) !important; /* Dark text for readability on pink */
+    color: var(--text-dark) !important; 
     padding: 14px 32px;
     font-weight: 600;
     border-radius: 30px; 
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    box-shadow: 0 4px 15px rgba(248, 202, 199, 0.4); /* Pink shadow */
+    box-shadow: 0 4px 15px rgba(248, 202, 199, 0.4); 
     border: 2px solid var(--brand-color);
 }
 
@@ -100,9 +99,12 @@ a {
     background: transparent;
 }
 
+/* Added lift animation for consistency */
 .btn-white-outline:hover {
     background-color: #ffffff;
     color: var(--text-dark) !important;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.15);
 }
 
 .btn-ig-hero {
@@ -118,9 +120,12 @@ a {
     transition: all 0.3s ease;
 }
 
+/* Added lift animation for consistency */
 .btn-ig-hero:hover {
     background-color: #ffffff;
     color: var(--text-dark) !important;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.15);
 }
 
 /* --- Navigation & Logo --- */
@@ -134,15 +139,20 @@ a {
     box-shadow: 0 2px 15px rgba(0,0,0,0.05);
 }
 
+/* Adjusted to bring logo & hamburger off the extreme edges */
 .nav-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     position: relative;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 5%; 
 }
 
+/* Made logo significantly larger */
 .nav-logo {
-    max-height: 50px;
+    max-height: 80px;
     width: auto;
     display: block;
 }
@@ -170,7 +180,7 @@ a {
 }
 
 .nav-ig-link {
-    color: var(--text-dark); /* Dark icon on white nav bar */
+    color: var(--text-dark); 
     display: flex;
     align-items: center;
     transition: transform 0.2s ease, color 0.2s ease;
@@ -215,7 +225,7 @@ a {
 .hero-overlay {
     position: absolute;
     top: 0; left: 0; right: 0; bottom: 0;
-    background: rgba(42, 40, 37, 0.5); /* Warm dark espresso overlay */
+    background: rgba(42, 40, 37, 0.5); 
 }
 
 .hero-content {
@@ -256,7 +266,6 @@ a {
     flex-wrap: wrap; 
 }
 
-/* --- Image Fallbacks --- */
 .image-fallback {
     background-color: var(--bg-offwhite);
     color: transparent; 
@@ -390,11 +399,11 @@ a {
     font-size: 0.95rem;
 }
 
-/* --- Salmon Pink Footer --- */
+/* --- Pink Footer --- */
 .footer {
     padding: 80px 0 30px 0;
     background-color: var(--brand-color);
-    color: var(--text-dark); /* Dark text on pink background */
+    color: var(--text-dark); 
 }
 
 .footer-content {
@@ -420,15 +429,17 @@ a {
     opacity: 0.8;
 }
 
-/* Custom override for the outline buttons inside the pink footer */
 .footer .btn-white-outline {
     border-color: var(--text-dark);
     color: var(--text-dark) !important;
 }
 
+/* Added lift animation for consistency */
 .footer .btn-white-outline:hover {
     background-color: var(--text-dark);
     color: var(--brand-color) !important;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.15);
 }
 
 .footer-image-container {
@@ -450,7 +461,6 @@ a {
     padding-top: 20px;
 }
 
-/* --- Mobile Sticky CTA --- */
 .mobile-sticky-cta {
     display: none;
     position: fixed;
@@ -471,6 +481,10 @@ a {
 
 /* --- Responsive & Mobile Menu --- */
 @media (max-width: 900px) {
+    .nav-container {
+        padding: 0 20px; 
+    }
+
     .nav-actions {
         display: none;
     }
